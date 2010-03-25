@@ -1,13 +1,16 @@
 # TunkRank
 
-Interface to the [TunKRank API](http://tunkrank.com/api).  [TunKRank](http://tunkrank.com) is a tool that measures a person's influence on Twitter by looking at how much attention your followers can actually give you.  You can read more [here](http://tunrkank.com/about).
+Interface to the [TunkRank API](http://tunkrank.com/api).  [TunkRank](http://tunkrank.com) is a tool that measures a person's influence on Twitter by looking at how much attention your followers can actually give you.  You can read more [here](http://tunrkank.com/about).
 
 ## Usage
 
-   require 'tunkrank'
-   TunkRank.score('ealdent')
-   TunkRank.raw_score('ealdent')  # => 6.87
-   TunkRank.ranking('ealdent')    # => 21
+The TunkRank API supports two main methods:  `score` and `refresh`.  The gem includes two convenience methods for returning just the raw score or just the ranking.
+
+    require 'tunkrank'
+    TunkRank.score('ealdent')
+    TunkRank.raw_score('ealdent')  # => 6.87
+    TunkRank.ranking('ealdent')    # => 21
+    TunkRank.refresh('ealdent')
 
 
 The result of the `score` method is a `Hash` that looks like the following
