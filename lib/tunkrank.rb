@@ -1,6 +1,6 @@
 require 'httparty'
 
-class TunkRankError < Error; end
+class TunkRankError < StandardError; end
 
 class TunkRank
   include HTTParty
