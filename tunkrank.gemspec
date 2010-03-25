@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/tunkrank.rb",
      "test/helper.rb",
-     "test/test_tunkrank.rb"
+     "test/test_tunkrank.rb",
+     "tunkrank.gemspec"
   ]
   s.homepage = %q{http://github.com/ealdent/tunkrank}
   s.rdoc_options = ["--charset=UTF-8"]
